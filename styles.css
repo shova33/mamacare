@@ -3,54 +3,97 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
 }
 
 :root {
-    /* Pastel Color Palette - Calming & Female-friendly */
-    --primary-pink: #FFB3C6;
-    --primary-pink-light: #FFE5EC;
-    --primary-pink-dark: #FF8FAB;
+    /* Human-Centered Palette 🌸 */
+    /* Warm Rose - Main Action / Brand */
+    --primary-rose: #E5989B;
+    --primary-rose-dark: #B5838D;
+    --primary-rose-light: #FFB4A2;
 
-    --secondary-lavender: #E0BBE4;
-    --secondary-lavender-light: #F3E5F5;
+    /* Earthy/Sage - Text & Calm Accents */
+    --sage-text: #6B705C;
+    --sage-dark: #4A4E40;
+    --sage-light: #A5A58D;
 
-    --accent-mint: #B4E7CE;
-    --accent-peach: #FFDAB9;
-    --accent-sky: #C8E6F5;
+    /* Backgrounds - Warm & Paper-like */
+    --bg-warm: #FFF9F5;
+    /* Warm white paper */
+    --bg-card: #FFFFFF;
+    --bg-soft: #F7E1D7;
+    /* Dusty peach for highlights */
 
-    --neutral-white: #FFFFFF;
-    --neutral-light: #F8F9FA;
-    --neutral-gray: #E9ECEF;
-    --text-primary: #2D3748;
-    --text-secondary: #718096;
+    /* Functional - Softened */
+    --success-green: #8DA78E;
+    /* Sage-like green */
+    --urgent-coral: #F28482;
+    /* Soft red/coral */
 
-    /* Spacing */
-    --spacing-xs: 0.5rem;
-    --spacing-sm: 1rem;
-    --spacing-md: 1.5rem;
-    --spacing-lg: 2rem;
-    --spacing-xl: 3rem;
+    /* Variables Mapping */
+    --primary-pink: var(--primary-rose);
+    --primary-pink-light: var(--bg-soft);
+    --primary-pink-dark: var(--primary-rose-dark);
 
-    /* Border Radius */
-    --radius-sm: 8px;
-    --radius-md: 16px;
-    --radius-lg: 24px;
+    --text-primary: var(--sage-dark);
+    --text-secondary: var(--sage-text);
+    --bg-app: var(--bg-warm);
+    --bg-card: #FFFFFF;
+
+    --white: #FFFFFF;
+    --neutral-gray: #F4F0ED;
+    /* Warm gray */
+    --neutral-light: #FAF7F5;
+
+    /* Softer UI Elements */
+    --shadow-sm: 0 4px 12px rgba(181, 131, 141, 0.08);
+    /* Colored shadow */
+    --shadow-md: 0 8px 24px rgba(181, 131, 141, 0.12);
+    --shadow-lg: 0 12px 32px rgba(181, 131, 141, 0.15);
+
+    --radius-sm: 12px;
+    --radius-md: 20px;
+    /* Super rounded cards */
+    --radius-lg: 28px;
     --radius-full: 9999px;
 
-    /* Shadows */
-    --shadow-sm: 0 2px 8px rgba(255, 179, 198, 0.1);
-    --shadow-md: 0 4px 16px rgba(255, 179, 198, 0.15);
-    --shadow-lg: 0 8px 24px rgba(255, 179, 198, 0.2);
+    --spacing-xs: 0.25rem;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 1.5rem;
+    --spacing-xl: 2rem;
+
+    --font-heading: 'Nunito', sans-serif;
+    /* Rounded, friendly */
+    --font-body: 'Nunito', sans-serif;
 }
 
 body {
-    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    background: linear-gradient(135deg, var(--primary-pink-light) 0%, var(--secondary-lavender-light) 100%);
+    font-family: var(--font-body);
+    background-color: var(--bg-app);
     color: var(--text-primary);
-    min-height: 100vh;
+    line-height: 1.6;
+    height: 100vh;
     overflow-x: hidden;
+    /* Soft Paper Texture Effect (Subtle) */
+    background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23b5838d' fill-opacity='0.03' fill-rule='evenodd'/%3E%3C/svg%3E");
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-heading);
+    font-weight: 800;
+    /* Extra bold for soft friendly look */
+    color: var(--text-primary);
+    letter-spacing: -0.02em;
+    /* Tighter for that 'modern friendly' look */
 }
 
 #app {

@@ -10,140 +10,140 @@ const AppState = {
     showEmergencyModal: false
 };
 
-// ===== TRANSLATIONS =====
+// ===== TRANSLATIONS & COPY =====
 const translations = {
     en: {
         appName: 'MamaCare',
         welcomeTitle: 'MamaCare',
-        welcomeSubtitle: 'Your caring companion throughout your pregnancy journey',
-        getStarted: 'Get Started',
+        welcomeSubtitle: 'Your safe space for a beautiful journey',
+        getStarted: 'Start My Journey',
 
-        eddTitle: 'When is your baby due?',
-        eddDescription: 'Enter your expected due date so we can provide personalized care reminders',
-        eddLabel: 'Expected Due Date',
+        eddTitle: 'When is your little one arriving?',
+        eddDescription: 'We’ll help you track every beautiful moment until then.',
+        eddLabel: 'My Due Date',
         continue: 'Continue',
 
-        greeting: 'Hello, Mama! 💕',
-        trimester1: '1st Trimester',
-        trimester2: '2nd Trimester',
-        trimester3: '3rd Trimester',
+        greeting: 'Hi, Mama 🌸',
+        trimester1: 'First Trimester',
+        trimester2: 'Second Trimester',
+        trimester3: 'Third Trimester',
         week: 'Week',
-        weeksPregnant: 'weeks pregnant',
-        daysRemaining: 'days until your due date',
+        weeksPregnant: 'weeks of love',
+        daysRemaining: 'days to go',
 
-        todayReminders: "Today's Care Reminders",
-        allReminders: 'All Reminders',
-        noReminders: 'No reminders for today. Take care! 💕',
+        todayReminders: "A Little Care for Today",
+        allReminders: 'My Care Journal',
+        noReminders: 'All caught up! Time to relax. ☕',
 
-        dashboard: 'Home',
-        reminders: 'Reminders',
-        hospitals: 'Hospitals',
-        settings: 'Settings',
+        dashboard: 'My Space',
+        reminders: 'Care',
+        hospitals: 'Help',
+        settings: 'Profile',
 
-        hospitalsTitle: 'Maternity Hospitals',
-        searchHospitals: 'Search hospitals...',
+        hospitalsTitle: 'Safe Places Nearby',
+        searchHospitals: 'Find a safe place...',
         allHospitals: 'All',
-        emergencyOnly: 'Emergency',
+        emergencyOnly: '24/7 Care',
         government: 'Government',
         private: 'Private',
-        callNow: 'Call Now',
-        getDirections: 'Directions',
-        services: 'Services',
+        callNow: 'Call Support',
+        getDirections: 'See Map',
+        services: 'Available Services',
 
-        emergencyTitle: 'Emergency Help',
-        emergencySubtitle: 'Quick access to emergency contacts',
-        closeButton: 'Close',
+        emergencyTitle: 'We Are Here For You',
+        emergencySubtitle: 'Help is just a tap away. You are not alone.',
+        closeButton: 'I’m Okay Now',
 
-        settingsTitle: 'Settings',
-        editDueDate: 'Edit Due Date',
-        editDueDateDesc: 'Update your expected delivery date',
-        changeLanguage: 'Language',
-        changeLanguageDesc: 'Switch between English and Nepali',
+        settingsTitle: 'My Profile',
+        editDueDate: 'Update Due Date',
+        editDueDateDesc: 'Did the doctor change the date? Update it here.',
+        changeLanguage: 'Language / भाषा',
+        changeLanguageDesc: 'Switch to Nepali or English',
         aboutApp: 'About MamaCare',
-        aboutAppDesc: 'Version 1.0 - Made with love for Nepal',
-        resetData: 'Reset App Data',
-        resetDataDesc: 'Clear all data and start over'
+        aboutAppDesc: 'Made with ❤️ for you',
+        resetData: 'Start Fresh',
+        resetDataDesc: 'Clear my data and start over'
     },
     ne: {
         appName: 'मामाकेयर',
         welcomeTitle: 'मामाकेयर',
-        welcomeSubtitle: 'तपाईंको गर्भावस्था यात्रामा तपाईंको हेरचाह साथी',
-        getStarted: 'सुरु गर्नुहोस्',
+        welcomeSubtitle: 'तपाईंको सुन्दर यात्राको लागि सुरक्षित स्थान',
+        getStarted: 'यात्रा सुरु गर्नुहोस्',
 
-        eddTitle: 'तपाईंको बच्चा कहिले जन्मने छ?',
-        eddDescription: 'हामी व्यक्तिगत हेरचाह सम्झनाहरू प्रदान गर्न सक्नको लागि तपाईंको अपेक्षित प्रसूति मिति प्रविष्ट गर्नुहोस्',
-        eddLabel: 'अपेक्षित प्रसूति मिति',
-        continue: 'जारी राख्नुहोस्',
+        eddTitle: 'तपाईंको सानो पाहुना कहिले आउँदैछ?',
+        eddDescription: 'हामी त्यस दिनसम्मको हरेक पललाई साथ दिनेछौं।',
+        eddLabel: 'मेरो प्रसूति मिति',
+        continue: 'अगाडि बढ्नुहोस्',
 
-        greeting: 'नमस्ते, आमा! 💕',
+        greeting: 'नमस्ते, आमा 🌸',
         trimester1: 'पहिलो त्रैमासिक',
         trimester2: 'दोस्रो त्रैमासिक',
         trimester3: 'तेस्रो त्रैमासिक',
         week: 'हप्ता',
-        weeksPregnant: 'हप्ता गर्भवती',
-        daysRemaining: 'दिन बाँकी छ',
+        weeksPregnant: 'हप्ताको माया',
+        daysRemaining: 'दिन बाँकी',
 
-        todayReminders: 'आजको हेरचाह सम्झनाहरू',
-        allReminders: 'सबै सम्झनाहरू',
-        noReminders: 'आजको लागि कुनै सम्झना छैन। हेरचाह गर्नुहोस्! 💕',
+        todayReminders: 'आजको लागि मायालु स्याहार',
+        allReminders: 'मेरो स्याहार डायरी',
+        noReminders: 'सबै काम सकियो! अब आराम गर्नुहोस्। ☕',
 
-        dashboard: 'गृह',
-        reminders: 'सम्झनाहरू',
-        hospitals: 'अस्पतालहरू',
-        settings: 'सेटिङहरू',
+        dashboard: 'मेरो स्थान',
+        reminders: 'स्याहार',
+        hospitals: 'सहयोग',
+        settings: 'प्रोफाइल',
 
-        hospitalsTitle: 'प्रसूति अस्पतालहरू',
-        searchHospitals: 'अस्पतालहरू खोज्नुहोस्...',
+        hospitalsTitle: 'नजिकैका सुरक्षित ठाउँहरू',
+        searchHospitals: 'सुरक्षित ठाउँ खोज्नुहोस्...',
         allHospitals: 'सबै',
-        emergencyOnly: 'आपतकालीन',
+        emergencyOnly: '२४/७ सेवा',
         government: 'सरकारी',
         private: 'निजी',
-        callNow: 'अहिले कल गर्नुहोस्',
-        getDirections: 'दिशा निर्देशन',
-        services: 'सेवाहरू',
+        callNow: 'सम्पर्क गर्नुहोस्',
+        getDirections: 'नक्सा हेर्नुहोस्',
+        services: 'उपलब्ध सेवाहरू',
 
-        emergencyTitle: 'आपतकालीन सहायता',
-        emergencySubtitle: 'आपतकालीन सम्पर्कहरूमा द्रुत पहुँच',
-        closeButton: 'बन्द गर्नुहोस्',
+        emergencyTitle: 'हामी तपाईंको साथमा छौं',
+        emergencySubtitle: 'सहयोग मात्र एक क्लिक टाढा छ। तपाईं एक्लै हुनुहुन्न।',
+        closeButton: 'म ठीक छु',
 
-        settingsTitle: 'सेटिङहरू',
-        editDueDate: 'प्रसूति मिति सम्पादन गर्नुहोस्',
-        editDueDateDesc: 'तपाईंको अपेक्षित प्रसूति मिति अद्यावधिक गर्नुहोस्',
-        changeLanguage: 'भाषा',
-        changeLanguageDesc: 'अंग्रेजी र नेपाली बीच स्विच गर्नुहोस्',
-        aboutApp: 'मामाकेयर बारे',
-        aboutAppDesc: 'संस्करण १.० - नेपालको लागि माया संग बनाइएको',
-        resetData: 'एप डेटा रिसेट गर्नुहोस्',
-        resetDataDesc: 'सबै डेटा हटाउनुहोस् र फेरि सुरु गर्नुहोस्'
+        settingsTitle: 'मेरो प्रोफाइल',
+        editDueDate: 'मिति सच्याउनुहोस्',
+        editDueDateDesc: 'के डाक्टरले मिति परिवर्तन गर्नुभयो? यहाँ अद्यावधिक गर्नुहोस्।',
+        changeLanguage: 'भाषा परिवर्तन',
+        changeLanguageDesc: 'नेपाली वा अंग्रेजीमा स्विच गर्नुहोस्',
+        aboutApp: 'मामाकेयरको बारेमा',
+        aboutAppDesc: 'तपाईंको लागि मायाका साथ बनाइएको',
+        resetData: 'नयाँ सुरुवात गर्नुहोस्',
+        resetDataDesc: 'मेरो डाटा हटाउनुहोस् र फेरि सुरु गर्नुहोस्'
     }
 };
 
-// ===== REMINDER DATA =====
+// ===== GENTLE NUDGES (Reminders) =====
 const reminderTemplates = {
     trimester1: [
-        { icon: '💊', title: 'Folic Acid', titleNe: 'फोलिक एसिड', description: 'Take your daily folic acid supplement', descriptionNe: 'तपाईंको दैनिक फोलिक एसिड पूरक लिनुहोस्', time: '09:00' },
-        { icon: '🥗', title: 'Healthy Breakfast', titleNe: 'स्वस्थ नाश्ता', description: 'Eat a nutritious breakfast with protein', descriptionNe: 'प्रोटीन संग पौष्टिक नाश्ता खानुहोस्', time: '08:00' },
-        { icon: '💧', title: 'Hydration', titleNe: 'पानी पिउनुहोस्', description: 'Drink a glass of water', descriptionNe: 'एक गिलास पानी पिउनुहोस्', time: '10:00' },
-        { icon: '😴', title: 'Rest Time', titleNe: 'आराम समय', description: 'Take a short rest to manage fatigue', descriptionNe: 'थकान व्यवस्थापन गर्न छोटो आराम लिनुहोस्', time: '14:00' },
-        { icon: '🍊', title: 'Vitamin C', titleNe: 'भिटामिन सी', description: 'Have some citrus fruits or juice', descriptionNe: 'केही सिट्रस फलफूल वा जुस लिनुहोस्', time: '16:00' },
-        { icon: '🏥', title: 'First Checkup', titleNe: 'पहिलो जाँच', description: 'Schedule your first prenatal visit (Week 8-10)', descriptionNe: 'तपाईंको पहिलो प्रसवपूर्व भ्रमण तालिका बनाउनुहोस्', time: '11:00' }
+        { icon: '💊', title: 'Folic Acid Time', titleNe: 'फोलिक एसिडको समय', description: 'Just a little pill for a big future.', descriptionNe: 'ठूलो भविष्यको लागि सानो चक्की।', time: '09:00' },
+        { icon: '🥗', title: 'Nourish Yourself', titleNe: 'आफूलाई पोषण दिनुहोस्', description: 'A healthy breakfast makes a happy baby.', descriptionNe: 'स्वस्थ नाश्ता, खुसी बच्चा।', time: '08:00' },
+        { icon: '💧', title: 'Sip Some Water', titleNe: 'पानी पिउनुहोस्', description: 'Hydration is self-love today.', descriptionNe: 'पानी पिउनु आजको आत्म-माया हो।', time: '10:00' },
+        { icon: '😴', title: 'Moment of Rest', titleNe: 'आरामको पल', description: 'Close your eyes for 5 mins. You deserve it.', descriptionNe: '५ मिनेट आँखा बन्द गर्नुहोस्। तपाईं यसको हकदार हुनुहुन्छ।', time: '14:00' },
+        { icon: '🍊', title: 'Vitamin Boost', titleNe: 'भिटामिनको शक्ति', description: 'Some fresh fruit would be lovely now.', descriptionNe: 'ताजा फलफूल अहिले धेरै राम्रो हुनेछ।', time: '16:00' },
+        { icon: '🏥', title: 'First Checkup', titleNe: 'पहिलो भेट', description: 'Time to meet the doctor? (Week 8-10)', descriptionNe: 'डाक्टरलाई भेट्ने समय भयो? (हप्ता ८-१०)', time: '11:00' }
     ],
     trimester2: [
-        { icon: '💊', title: 'Iron Supplement', titleNe: 'आइरन पूरक', description: 'Take your iron and folic acid tablet', descriptionNe: 'तपाईंको आइरन र फोलिक एसिड ट्याब्लेट लिनुहोस्', time: '09:00' },
-        { icon: '🥛', title: 'Calcium Intake', titleNe: 'क्याल्सियम सेवन', description: 'Have milk or dairy products for calcium', descriptionNe: 'क्याल्सियमको लागि दूध वा डेयरी उत्पादनहरू लिनुहोस्', time: '10:00' },
-        { icon: '🚶‍♀️', title: 'Gentle Exercise', titleNe: 'हल्का व्यायाम', description: 'Take a 15-minute walk', descriptionNe: '१५ मिनेट हिड्नुहोस्', time: '17:00' },
-        { icon: '🥗', title: 'Nutritious Meal', titleNe: 'पौष्टिक खाना', description: 'Eat a balanced meal with vegetables', descriptionNe: 'तरकारी संग सन्तुलित खाना खानुहोस्', time: '13:00' },
-        { icon: '💧', title: 'Stay Hydrated', titleNe: 'हाइड्रेटेड रहनुहोस्', description: 'Drink water regularly throughout the day', descriptionNe: 'दिनभर नियमित रूपमा पानी पिउनुहोस्', time: '15:00' },
-        { icon: '🏥', title: 'Regular Checkup', titleNe: 'नियमित जाँच', description: 'Monthly prenatal checkup reminder', descriptionNe: 'मासिक प्रसवपूर्व जाँच सम्झना', time: '11:00' }
+        { icon: '💊', title: 'Iron & Love', titleNe: 'आइरन र माया', description: 'Strong mama, constant care.', descriptionNe: 'बलियो आमा, निरन्तर स्याहार।', time: '09:00' },
+        { icon: '🥛', title: 'Calcium for Two', titleNe: 'दुई जनाको लागि क्याल्सियम', description: 'Milk or curd helps bones grow.', descriptionNe: 'दूध वा दहीले हड्डी बलियो बनाउँछ।', time: '10:00' },
+        { icon: '🚶‍♀️', title: 'Gentle Walk', titleNe: 'हल्का हिडडुल', description: 'Let’s move a little, feels good!', descriptionNe: 'थोरै हिडडुल गरौं, राम्रो महसुस हुन्छ!', time: '17:00' },
+        { icon: '🥗', title: 'Healthy Plate', titleNe: 'स्वस्थ खाना', description: 'Colors on your plate mean health.', descriptionNe: 'तपाईंको थालमा रङ भनेको स्वास्थ्य हो।', time: '13:00' },
+        { icon: '💧', title: 'Keep Sipping', titleNe: 'पिउँदै गर्नुहोस', description: 'Water helps everything flow better.', descriptionNe: 'पानीले शरीरलाई सहज बनाउँछ।', time: '15:00' },
+        { icon: '🏥', title: 'Checkup Reminder', titleNe: 'जाँचको सम्झना', description: 'Is it time for your monthly visit?', descriptionNe: 'के यो तपाईंको मासिक जाँचको समय हो?', time: '11:00' }
     ],
     trimester3: [
-        { icon: '💊', title: 'Daily Supplements', titleNe: 'दैनिक पूरकहरू', description: 'Take your prenatal vitamins and iron', descriptionNe: 'तपाईंको प्रसवपूर्व भिटामिन र आइरन लिनुहोस्', time: '09:00' },
-        { icon: '🎒', title: 'Hospital Bag', titleNe: 'अस्पताल झोला', description: 'Prepare items for your hospital bag', descriptionNe: 'तपाईंको अस्पताल झोलाको लागि वस्तुहरू तयार गर्नुहोस्', time: '10:00' },
-        { icon: '⚠️', title: 'Danger Signs', titleNe: 'खतरा संकेतहरू', description: 'Be aware: severe headache, bleeding, reduced movement', descriptionNe: 'सचेत रहनुहोस्: गम्भीर टाउको दुखाइ, रक्तस्राव, कम आन्दोलन', time: '12:00' },
-        { icon: '😴', title: 'Rest & Elevate', titleNe: 'आराम र उचाई', description: 'Rest with feet elevated to reduce swelling', descriptionNe: 'सुन्निने कम गर्न खुट्टा माथि राखेर आराम गर्नुहोस्', time: '14:00' },
-        { icon: '💧', title: 'Hydration', titleNe: 'पानी पिउनुहोस्', description: 'Drink plenty of water', descriptionNe: 'धेरै पानी पिउनुहोस्', time: '16:00' },
-        { icon: '🏥', title: 'Weekly Checkup', titleNe: 'साप्ताहिक जाँच', description: 'Weekly prenatal visit (Week 36+)', descriptionNe: 'साप्ताहिक प्रसवपूर्व भ्रमण', time: '11:00' },
-        { icon: '🤱', title: 'Birth Plan', titleNe: 'जन्म योजना', description: 'Discuss birth preferences with your doctor', descriptionNe: 'तपाईंको डाक्टरसँग जन्म प्राथमिकताहरू छलफल गर्नुहोस्', time: '15:00' }
+        { icon: '💊', title: 'Daily Strength', titleNe: 'दैनिक शक्ति', description: 'Vitamins for the final stretch.', descriptionNe: 'अन्तिम चरणको लागि भिटामिनहरू।', time: '09:00' },
+        { icon: '🎒', title: 'Ready the Bag', titleNe: 'झोला तयारी', description: 'Maybe pack one small thing today?', descriptionNe: 'सायद आज एउटा सानो सामान प्याक गर्ने?', time: '10:00' },
+        { icon: '⚠️', title: 'Listen to Body', titleNe: 'शरीरको कुरा सुन्नुहोस्', description: 'Feeling odd? It’s okay to call the doctor.', descriptionNe: 'असहज महसुस हुँदैछ? डाक्टरलाई कल गर्दा हुन्छ।', time: '12:00' },
+        { icon: '😴', title: 'Feet Up', titleNe: 'खुट्टा माथि', description: 'Prop those feet up and breathe.', descriptionNe: 'खुट्टा माथि राख्नुहोस् र लामो सास फेर्नुहोस्।', time: '14:00' },
+        { icon: '💧', title: 'Water is Life', titleNe: 'पानी जीवन हो', description: 'Keep drinking, you’re doing great.', descriptionNe: 'पिउँदै गर्नुहोस्, तपाईं राम्रो गर्दै हुनुहुन्छ।', time: '16:00' },
+        { icon: '🏥', title: 'Weekly Visit', titleNe: 'साप्ताहिक भेट', description: 'Almost there! Time for a checkup?', descriptionNe: 'पुग्नै लाग्यो! के जाँचको समय भयो?', time: '11:00' },
+        { icon: '🤱', title: 'Birth Wishes', titleNe: 'जन्मको चाहना', description: 'Thinking about how you want to meet baby?', descriptionNe: 'बच्चालाई कसरी भेट्न चाहनुहुन्छ सोच्दै हुनुहुन्छ?', time: '15:00' }
     ]
 };
 
@@ -265,6 +265,33 @@ function renderEDDScreen() {
     `;
 }
 
+// ===== HUMAN TOUCH HELPERS =====
+function getWarmGreeting(name) {
+    const hours = new Date().getHours();
+    const timeGreeting = hours < 12 ? 'Good Morning' : (hours < 18 ? 'Good Afternoon' : 'Good Evening');
+
+    // In future: we can use the name if profile is set "Hi, ${name} 🌸"
+    // For now, random affectionate greetings
+    const greetingsEn = [
+        "Hi, Mama 🌸",
+        "You're doing great 💖",
+        "Hello, Beautiful ✨",
+        "Sending you love 🌷",
+        `${timeGreeting}, Mama ☀️`
+    ];
+
+    const greetingsNe = [
+        "नमस्ते, आमा 🌸",
+        "तपाईं राम्रो गर्दै हुनुहुन्छ 💖",
+        "नमस्ते, सुन्दर आमा ✨",
+        "तपाईंलाई धेरै माया 🌷",
+        "नमस्ते ☀️"
+    ];
+
+    const list = AppState.language === 'ne' ? greetingsNe : greetingsEn;
+    return list[Math.floor(Math.random() * list.length)];
+}
+
 function renderDashboardScreen() {
     const { edd, week, trimester, daysRemaining } = AppState.pregnancyData;
     const trimesterText = t(`trimester${trimester}`);
@@ -273,56 +300,58 @@ function renderDashboardScreen() {
     const offset = circumference - (progress / 100) * circumference;
 
     const todayReminders = getRemindersForTrimester(trimester);
+    const greeting = getWarmGreeting(); // Use random greeting
 
     return `
         <div class="screen dashboard-screen">
-            <div class="dashboard-header">
-                <div class="greeting">${t('greeting')}</div>
-                <div class="pregnancy-info">
-                    <div class="trimester-badge">${trimesterText}</div>
+            <div class="dashboard-header" style="padding-bottom: 2rem;">
+                <div class="greeting slide-up">${greeting}</div>
+                <div class="pregnancy-info slide-up" style="animation-delay: 0.1s;">
+                    <div class="trimester-badge" style="background: rgba(255,255,255,0.3); backdrop-filter: blur(5px); border: 1px solid rgba(255,255,255,0.4);">${trimesterText}</div>
                     <div class="week-display">${t('week')} ${week}</div>
                 </div>
             </div>
             
-            <div class="container">
-                <div class="progress-container">
-                    <div class="progress-circle">
+            <div class="container" style="margin-top: -1rem;">
+                <!-- PROGRESS CARD -->
+                <div class="card slide-up" style="animation-delay: 0.2s; display: flex; align-items: center; justify-content: space-around; padding: 1.5rem;">
+                    <div class="progress-circle" style="transform: scale(0.8); margin: 0;">
                         <svg width="200" height="200">
                             <defs>
                                 <linearGradient id="progressGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                                    <stop offset="0%" style="stop-color:#FFB3C6;stop-opacity:1" />
-                                    <stop offset="100%" style="stop-color:#E0BBE4;stop-opacity:1" />
+                                    <stop offset="0%" style="stop-color:var(--primary-rose);stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:var(--primary-rose-light);stop-opacity:1" />
                                 </linearGradient>
                             </defs>
-                            <circle class="progress-circle-bg" cx="100" cy="100" r="90"></circle>
+                            <circle class="progress-circle-bg" cx="100" cy="100" r="90" style="stroke: var(--bg-soft);"></circle>
                             <circle class="progress-circle-fill" 
                                     cx="100" cy="100" r="90"
                                     stroke-dasharray="${circumference}"
-                                    stroke-dashoffset="${offset}"></circle>
+                                    stroke-dashoffset="${offset}"
+                                    style="stroke: url(#progressGradient);"></circle>
                         </svg>
                         <div class="progress-text">
-                            <div class="progress-weeks">${week}</div>
-                            <div class="progress-label">${t('weeksPregnant')}</div>
+                            <div class="progress-weeks" style="color: var(--sage-dark);">${week}</div>
+                            <div class="progress-label" style="color: var(--sage-text);">${t('weeksPregnant')}</div>
                         </div>
                     </div>
-                </div>
-                
-                <div class="card text-center">
-                    <div style="font-size: 2rem; margin-bottom: 0.5rem;">📅</div>
-                    <div style="font-size: 1.5rem; font-weight: 600; color: var(--primary-pink);">
-                        ${daysRemaining}
+                    
+                    <div class="days-display" style="text-align: center;">
+                        <div style="font-size: 2.5rem; font-weight: 800; color: var(--primary-rose); line-height: 1;">${daysRemaining}</div>
+                        <div style="font-size: 0.85rem; color: var(--sage-text); max-width: 80px;">${t('daysRemaining')}</div>
                     </div>
-                    <div style="color: var(--text-secondary);">${t('daysRemaining')}</div>
                 </div>
                 
-                <h2 class="section-header">${t('todayReminders')}</h2>
+                <h2 class="section-header" style="margin-top: 2rem; color: var(--sage-dark);">${t('todayReminders')}</h2>
+                <div style="display: flex; flex-direction: column; gap: 1rem;">
                 ${todayReminders.length > 0
-            ? todayReminders.map(reminder => renderReminderCard(reminder)).join('')
+            ? todayReminders.map((reminder, index) => renderReminderCard(reminder, index)).join('')
             : `<div class="empty-state">
-                         <div class="empty-icon">💕</div>
+                         <div class="empty-icon">☕</div>
                          <div class="empty-text">${t('noReminders')}</div>
                        </div>`
         }
+                </div>
             </div>
             
             ${renderBottomNav()}
@@ -338,13 +367,15 @@ function renderRemindersScreen() {
         <div class="screen dashboard-screen">
             <div class="dashboard-header">
                 <div class="greeting">${t('allReminders')}</div>
-                <div style="font-size: 0.9rem; margin-top: 0.5rem; opacity: 0.9;">
-                    ${t(`trimester${trimester}`)}
+                <div style="font-size: 1rem; margin-top: 0.5rem; opacity: 0.9;">
+                   🌸 ${t(`trimester${trimester}`)}
                 </div>
             </div>
             
             <div class="container">
-                ${allReminders.map(reminder => renderReminderCard(reminder)).join('')}
+                <div style="display: flex; flex-direction: column; gap: 1rem;">
+                    ${allReminders.map((reminder, index) => renderReminderCard(reminder, index)).join('')}
+                </div>
             </div>
             
             ${renderBottomNav()}
@@ -414,6 +445,157 @@ function renderReminderCard(reminder) {
     `;
 }
 
+// ===== NEW RENDER FUNCTIONS =====
+function renderProfileScreen() {
+    const profile = AppState.userProfile || { name: 'Mama', bio: 'Waiting for my sunshine ☀️', week: AppState.pregnancyData.week };
+
+    return `
+        <div class="screen dashboard-screen">
+            <div class="dashboard-header" style="height: 180px; align-items: flex-start; padding-top: 2rem;">
+                <div class="greeting">${t('settingsTitle')}</div>
+            </div>
+            
+            <div class="container" style="margin-top: -80px;">
+                <!-- Profile Card -->
+                <div class="card slide-up" style="text-align: center; padding: 2rem 1rem;">
+                    <div class="profile-avatar" style="width: 100px; height: 100px; background: var(--bg-soft); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 3rem; border: 4px solid white; box-shadow: var(--shadow-sm);">
+                        👩‍🍼
+                    </div>
+                    <h2 style="color: var(--sage-dark); margin-bottom: 0.25rem;">${profile.name} <span onclick="editProfileName()" style="font-size: 1rem; opacity: 0.5; cursor: pointer;">✎</span></h2>
+                    <p style="color: var(--sage-text); font-style: italic;">"${profile.bio}"</p>
+                    <div style="margin-top: 1rem; display: flex; gap: 0.5rem; justify-content: center;">
+                        <span class="service-tag">Week ${profile.week}</span>
+                        <span class="service-tag">Due ${new Date(AppState.pregnancyData.edd).toLocaleDateString(undefined, { month: 'short', year: 'numeric' })}</span>
+                    </div>
+                </div>
+
+                <!-- Settings Section -->
+                <h3 class="section-header" style="margin-top: 2rem;">Preferences</h3>
+                <div class="settings-list">
+                    <div class="settings-item" onclick="editDueDate()">
+                        <div class="settings-item-content">
+                            <div class="settings-item-title">${t('editDueDate')}</div>
+                            <div class="settings-item-description">${t('editDueDateDesc')}</div>
+                        </div>
+                        <div class="settings-item-arrow">›</div>
+                    </div>
+                    
+                    <div class="settings-item" onclick="toggleLanguage()">
+                        <div class="settings-item-content">
+                            <div class="settings-item-title">${t('changeLanguage')}</div>
+                            <div class="settings-item-description">${t('changeLanguageDesc')}</div>
+                        </div>
+                        <div class="settings-item-arrow">›</div>
+                    </div>
+                    
+                    <div class="settings-item" onclick="resetAppData()" style="border: 1px solid var(--urgent-coral); background: #FFF5F5;">
+                        <div class="settings-item-content">
+                            <div class="settings-item-title" style="color: var(--urgent-coral);">${t('resetData')}</div>
+                            <div class="settings-item-description">${t('resetDataDesc')}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            ${renderBottomNav()}
+        </div>
+    `;
+}
+
+function renderCommunityScreen() {
+    return `
+        <div class="screen dashboard-screen">
+            <div class="dashboard-header">
+                <div class="greeting">Sisterhood 👯‍♀️</div>
+                <div style="font-size: 1rem; margin-top: 0.5rem; opacity: 0.9;">Safe space to share</div>
+            </div>
+            
+            <div class="container">
+                <!-- Tabs -->
+                <div class="filter-chips" style="margin-bottom: 1.5rem;">
+                    <button class="filter-chip active">Friends Chat</button>
+                    <button class="filter-chip">Anonymous Space</button>
+                </div>
+
+                <!-- Chat List Mock -->
+                <div class="card slide-up" style="margin-bottom: 1rem; padding: 1rem; display: flex; gap: 1rem; align-items: center;">
+                    <div style="width: 50px; height: 50px; background: #E6E6FA; border-radius: 50%; display: flex; align-items: center; justify-content: center;">👩</div>
+                    <div style="flex: 1;">
+                        <div style="font-weight: 700; color: var(--sage-dark);">Sita (Week 24)</div>
+                        <div style="font-size: 0.9rem; color: var(--sage-text);">How are you feeling today? 🌸</div>
+                    </div>
+                    <div style="font-size: 0.8rem; color: #999;">10:30</div>
+                </div>
+                
+                <div class="card slide-up" style="margin-bottom: 1rem; padding: 1rem; display: flex; gap: 1rem; align-items: center;">
+                    <div style="width: 50px; height: 50px; background: #FFDAB9; border-radius: 50%; display: flex; align-items: center; justify-content: center;">👩‍🦱</div>
+                    <div style="flex: 1;">
+                        <div style="font-weight: 700; color: var(--sage-dark);">Gita (Week 32)</div>
+                        <div style="font-size: 0.9rem; color: var(--sage-text);">I found a great yoga video!</div>
+                    </div>
+                    <div style="font-size: 0.8rem; color: #999;">Yesterday</div>
+                </div>
+                
+                <div style="text-align: center; margin-top: 2rem; color: var(--sage-text); font-style: italic;">
+                    Connect with more mamas nearby...
+                </div>
+            </div>
+            ${renderBottomNav()}
+        </div>
+    `;
+}
+
+function renderShopScreen() {
+    return `
+        <div class="screen dashboard-screen">
+            <div class="dashboard-header">
+                <div class="greeting">Mama Shop 🛍️</div>
+                <div style="font-size: 1rem; margin-top: 0.5rem; opacity: 0.9;">Curated essentials for you</div>
+            </div>
+            
+            <div class="container">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                    <!-- Shop Item 1 -->
+                    <div class="card slide-up" style="padding: 0; overflow: hidden;">
+                        <div style="height: 120px; background: #F0F0F0; display: flex; align-items: center; justify-content: center; font-size: 3rem;">🤰</div>
+                        <div style="padding: 1rem;">
+                            <h4 style="font-size: 0.9rem; margin-bottom: 0.25rem;">Pregnancy Pillow</h4>
+                            <div style="color: var(--primary-rose); font-weight: 700;">Rs. 2,500</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Shop Item 2 -->
+                    <div class="card slide-up" style="padding: 0; overflow: hidden; animation-delay: 0.1s;">
+                        <div style="height: 120px; background: #F0F0F0; display: flex; align-items: center; justify-content: center; font-size: 3rem;">💊</div>
+                        <div style="padding: 1rem;">
+                            <h4 style="font-size: 0.9rem; margin-bottom: 0.25rem;">Folic Acid Pack</h4>
+                            <div style="color: var(--primary-rose); font-weight: 700;">Rs. 450</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Shop Item 3 -->
+                    <div class="card slide-up" style="padding: 0; overflow: hidden; animation-delay: 0.2s;">
+                        <div style="height: 120px; background: #F0F0F0; display: flex; align-items: center; justify-content: center; font-size: 3rem;">🧴</div>
+                        <div style="padding: 1rem;">
+                            <h4 style="font-size: 0.9rem; margin-bottom: 0.25rem;">Stretch Mark Oil</h4>
+                            <div style="color: var(--primary-rose); font-weight: 700;">Rs. 1,200</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Shop Item 4 -->
+                    <div class="card slide-up" style="padding: 0; overflow: hidden; animation-delay: 0.3s;">
+                        <div style="height: 120px; background: #F0F0F0; display: flex; align-items: center; justify-content: center; font-size: 3rem;">🧘‍♀️</div>
+                        <div style="padding: 1rem;">
+                            <h4 style="font-size: 0.9rem; margin-bottom: 0.25rem;">Yoga Mat</h4>
+                            <div style="color: var(--primary-rose); font-weight: 700;">Rs. 1,800</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            ${renderBottomNav()}
+        </div>
+    `;
+}
+
 function renderBottomNav() {
     return `
         <nav class="bottom-nav">
@@ -422,19 +604,24 @@ function renderBottomNav() {
                 <div class="nav-icon">🏠</div>
                 <div class="nav-label">${t('dashboard')}</div>
             </button>
-            <button class="nav-item ${AppState.currentTab === 'reminders' ? 'active' : ''}" 
-                    onclick="switchTab('reminders')">
-                <div class="nav-icon">🔔</div>
-                <div class="nav-label">${t('reminders')}</div>
+            <button class="nav-item ${AppState.currentTab === 'community' ? 'active' : ''}" 
+                    onclick="switchTab('community')">
+                <div class="nav-icon">👯‍♀️</div>
+                <div class="nav-label">Sisterhood</div>
             </button>
             <button class="nav-item ${AppState.currentTab === 'hospitals' ? 'active' : ''}" 
                     onclick="switchTab('hospitals')">
                 <div class="nav-icon">🏥</div>
                 <div class="nav-label">${t('hospitals')}</div>
             </button>
+            <button class="nav-item ${AppState.currentTab === 'shop' ? 'active' : ''}" 
+                    onclick="switchTab('shop')">
+                <div class="nav-icon">🛍️</div>
+                <div class="nav-label">Shop</div>
+            </button>
             <button class="nav-item ${AppState.currentTab === 'settings' ? 'active' : ''}" 
                     onclick="switchTab('settings')">
-                <div class="nav-icon">⚙️</div>
+                <div class="nav-icon">👤</div>
                 <div class="nav-label">${t('settings')}</div>
             </button>
         </nav>
@@ -758,8 +945,12 @@ function render() {
                 content = renderRemindersScreen();
             } else if (AppState.currentTab === 'hospitals') {
                 content = renderHospitalsScreen();
+            } else if (AppState.currentTab === 'community') {
+                content = renderCommunityScreen();
+            } else if (AppState.currentTab === 'shop') {
+                content = renderShopScreen();
             } else if (AppState.currentTab === 'settings') {
-                content = renderSettingsScreen();
+                content = renderProfileScreen();
             }
             break;
         default:
@@ -767,6 +958,25 @@ function render() {
     }
 
     app.innerHTML = content;
+}
+
+// ===== PROFILE LOGIC =====
+function editProfileName() {
+    const currentName = AppState.userProfile ? AppState.userProfile.name : 'Mama';
+    const newName = prompt('What should we call you? 🌸', currentName);
+
+    if (newName && newName.trim() !== '') {
+        const currentBio = AppState.userProfile ? AppState.userProfile.bio : 'Waiting for my sunshine ☀️';
+
+        AppState.userProfile = {
+            name: newName,
+            bio: currentBio,
+            week: AppState.pregnancyData.week
+        };
+
+        saveToLocalStorage('userProfile', AppState.userProfile);
+        render();
+    }
 }
 
 // ===== INITIALIZATION =====
@@ -792,6 +1002,16 @@ function init() {
         };
 
         AppState.currentScreen = 'dashboard';
+    }
+
+    // Load Profile
+    const savedProfile = getFromLocalStorage('userProfile');
+    if (savedProfile) {
+        AppState.userProfile = savedProfile;
+        // Update week in profile just in case
+        if (AppState.pregnancyData) {
+            AppState.userProfile.week = AppState.pregnancyData.week;
+        }
     }
 
     // Request notification permissions
